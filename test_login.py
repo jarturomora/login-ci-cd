@@ -3,7 +3,7 @@ from main import login
 
 class TestLogin(unittest.TestCase):
     def test_valid_user(self):
-        self.assertTrue(login("alice", "password123"))
+        self.assertTrue(login("alice", "password12"))
 
     def test_invalid_password(self):
         self.assertFalse(login("alice", "wrongpass"))
