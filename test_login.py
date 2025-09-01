@@ -9,7 +9,7 @@ class TestLogin(unittest.TestCase):
         self.assertFalse(login("alice", "wrongpass"))
 
     def test_nonexistent_user(self):
-        self.assertFalse(login("charlie", "nopass"))
+        self.assertFalse(login("charlie", "nopassword"))
 
 if __name__ == "__main__":
     unittest.main()
